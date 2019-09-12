@@ -1,7 +1,6 @@
 <footer class="sticky-footer">
       <div class="container">
-        <div class="text-center">
-          <small><font color="black">Copyright &copy; Sparkle Boutique 2018</font></small>
+
         </div>
       </div>
     </footer>

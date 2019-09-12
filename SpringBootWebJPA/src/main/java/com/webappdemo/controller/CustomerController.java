@@ -29,6 +29,9 @@ public class CustomerController {
 	{
 		ModelAndView mv = new ModelAndView("Customer");
 		List<Customer> customerList = cDAO.findAll();
+		
+		List<Customer> customerListByCity = cDAO.findCustomerByCustomerCity(1);
+		System.out.println(customerListByCity);
 		mv.addObject(customerList);
 		return mv;
 	}
@@ -66,6 +69,18 @@ public class CustomerController {
 	{
 		cDAO.deleteById(id);
 		return "redirect:/Customer";
+	}
+	
+	@RequestMapping("/login")
+	public String loginPage()
+	{
+		return "login";
+	}
+	
+	@RequestMapping("/logout")
+	public String loginOutPage()
+	{
+		return "login";
 	}
 
 }

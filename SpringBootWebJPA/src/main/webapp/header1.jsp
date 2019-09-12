@@ -21,7 +21,7 @@
 <body class="fixed-nav sticky-footer bg-dark" id="page-top">
   <!-- Navigation-->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
-    <a class="navbar-brand" href="sparkleboutique.php">ABC Company</a>
+    <a class="navbar-brand" href="/">ABC Company</a>
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -35,10 +35,15 @@
 		<li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
           <a class="nav-link" href="/">
             <i class="fa fa-envelope"></i>
+            <span class="nav-link-text"><font color="white" size="4">City</span>
+          </a>
+        </li>
+		<li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
+          <a class="nav-link" href="/Customer">
+            <i class="fa fa-envelope"></i>
             <span class="nav-link-text"><font color="white" size="4">Customer</span>
           </a>
         </li>
-		
 	
 		
 		
@@ -60,7 +65,7 @@
         
         
         <li class="nav-item" style=" margin-left: 920px;">
-          <a class="nav-link" href="logout.php"  align="right">
+          <a class="nav-link" href=""  align="right">
 		  
             <i class="fa fa-fw fa-sign-out" align="right" ><font color="white" size="4"></i>Logout</font></a>
         </li>
