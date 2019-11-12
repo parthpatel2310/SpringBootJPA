@@ -1,52 +1,46 @@
 package com.webappdemo.model;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 @Entity
-@Table(name="city")
+@Table(name = "city")
 public class City {
-	
-	
-	@Id
-	@Column(name="cityid")
-	private int cityId;
-	
-	@Column(name="cityname")
-	private String cityName;
-	
 
-	
-		
-	public int getCityId() {
-		return cityId;
-	}
 
-	@Override
-	public String toString() {
-		return "City [cityId=" + cityId + ", cityName=" + cityName + "]";
-	}
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "cityid")
+    private int cityId;
 
-	public void setCityId(int cityId) {
-		this.cityId = cityId;
-	}
+    @Column(name = "cityname")
+    private String cityName;
 
-	public String getCityName() {
-		return cityName;
-	}
-  
-	
-	public void setCityName(String cityName) {
-		this.cityName = cityName;
-	}
 
-	
+    public int getCityId() {
+        return cityId;
+    }
 
-	public void Display()
-	{
-		System.out.println("Hello");
-	}
+    public void setCityId(int cityId) {
+        this.cityId = cityId;
+    }
+
+    @Override
+    public String toString() {
+        return "City [cityId=" + cityId + ", cityName=" + cityName + "]";
+    }
+
+    public String getCityName() {
+        return cityName;
+    }
+
+
+    public void setCityName(String cityName) {
+        this.cityName = cityName;
+    }
+
+
+    public void Display() {
+        System.out.println("Hello");
+    }
 
 }
