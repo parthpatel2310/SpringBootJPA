@@ -19,7 +19,7 @@
                 
                 
                 <label for="exampleInputName"><font color="black">Password</font></label>
-                <input class="form-control" id="exampleInputName" type="text" aria-describedby="nameHelp" name="customerPassword">
+                <input class="form-control" id="exampleInputName" type="password" aria-describedby="nameHelp" name="customerPassword">
                 
                   
                 <label for="exampleInputName"><font color="black">City</font></label>
