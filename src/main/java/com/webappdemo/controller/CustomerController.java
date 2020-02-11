@@ -29,7 +29,7 @@ public class CustomerController {
         List<Customer> customerList = cDAO.findAll();
 
         List<Customer> customerListByCity = cDAO.findCustomerByCustomerCity(1);
-      //  System.out.println(customerListByCity);
+      System.out.println(customerListByCity);
         mv.addObject(customerList);
         return mv;
     }
